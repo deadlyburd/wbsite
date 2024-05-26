@@ -11,30 +11,30 @@ const font = Lora({
 
 const logos = [
   {
-    image: "/logo/logoipsum-248.svg",
+    image: "/logo/1.png",
   },
   {
-    image: "/logo/logoipsum-245.svg",
+    image: "/logo/13.png",
   },
   {
-    image: "/logo/logoipsum-225.svg",
+    image: "/logo/10.png",
   },
   {
-    image: "/logo/logoipsum-248.svg",
+    image: "/logo/11.png",
   },
   {
-    image: "/logo/logoipsum-249.svg",
+    image: "/logo/12.png",
   },
   {
-    image: "/logo/stripelogo.png",
+    image: "/logo/6.png",
   },
 ];
 
 const Brands = () => {
   return (
     <div>
-      <div className=" p-4   mx-auto relative z-10  w-full pt-20 md:pt-32">
-        <div className="text-4xl md:pb-8 md:text-7xl text-center 
+      <div className=" p-4  mx-auto relative z-10  w-full pt-4 md:pt-32">
+        <div className="text-5xl md:pb-8 md:text-7xl text-left
         bg-clip-text text-transparent bg-gradient-to-b from-purple-500 to-sky-200 bg-opacity-50">
           The best brands <br /> choose us
         </div>
@@ -61,17 +61,17 @@ const Brands = () => {
 
         <div
           className={cn(
-            "flex items-center justify-center text-xl xl:text-2xl pt-10 md:pt-0 pb-4  px-8  text-center text-white  ",
+            "flex items-left justify-left text-xl xl:text-2xl pt-10 md:pt-0 pb-4  px-8  text-left text-white  ",
             font.className
           )}
         >
           &quot;We got rid of nearly a dozen different tools because of what
-          Bird does for us.&quot;
+          Xaable does for us.&quot;
         </div>
 
         <div className="items-center flex justify-center flex-col text-white">
           <Image
-            src="/images/logo.svg"
+            src="https://cdn.dribbble.com/userupload/14712912/file/original-f42c1f0c81226746ce66260d88204e7f.jpg?resize=1200x900"
             alt="logo"
             width={1000}
             height={1000}

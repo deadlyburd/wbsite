@@ -20,14 +20,14 @@ export const projects = [
         icon : <div className="bg-blue-100 p-4 rounded-full"><PiStorefront className="w-8 h-8 text-blue-600" /></div>,
         title: "E-commerce Store",
         description:
-          "From small stores to large online retailers, we have the expertise to build a store that will help you grow your business.",
+          "Expand your services by selling dental products directly from your website. Our e-commerce solutions make it easy for your patients to find and purchase the products they need.",
        
       },
       {
         icon : <div className="bg-blue-100 p-4 rounded-full"><PiLock className="w-8 h-8 text-blue-600" /></div>,
-        title: "Authentication",
+        title: "Appointment Booking System",
         description:
-          "Secure authentication solutions for your website or app. We use the latest technology to keep your data safe.",
+          "Simplify your appointment scheduling with our integrated booking system. Allow patients to book their appointments online at their convenience.",
       
       },
       {
@@ -41,14 +41,14 @@ export const projects = [
         icon : <div className="bg-blue-100 p-4 rounded-full"><PiAppStoreLogo className="w-8 h-8 text-blue-600" /></div>,
         title: "App Development",
         description:
-          "We build custom mobile apps for iOS and Android. Our apps are designed to be user-friendly and performant.",
+          "Our experienced team is working on mainting a ecosystem for all the dentists out there.",
       
       },
       {
         icon : <div className="bg-blue-100 p-4 rounded-full"><PiHeadsetFill className="w-8 h-8 text-blue-600" /></div>,
-        title: "Support",
+        title: "Patient Data Management",
         description:
-          "We offer support for all our clients. We are here to help you with any issues or questions you may have.",
+          "Keep your patient information organized and secure with our patient data management system. Available under different plans to suit your practice’s needs.",
      
       },
 ];

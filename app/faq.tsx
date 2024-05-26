@@ -9,49 +9,45 @@ import {
 
 const FAQS = () => {
     return ( 
-        <div className=" mt-10 md:py-10 bg-[#f6f5f4] w-full
-        rounded-3xl
-        
-        ">
-          <div className=" p-10 md:p-4 md:px-20">
-            <div className="text-3xl md:text-7xl font-bold text-black">
+        <div className=" mt-10 md:py-10 bg-black w-full
+        rounded-3xl">
+          <div className=" rounded-sm p-10 md:p-4 md:px-20">
+            <div className="text-4xl md:text-7xl font-bold text-neutral-100 rounded-full">
               Have questions ?
             </div>
-            <div className="  font-semibold text-3xl md:text-6xl text-gradient bg-gradient-to-r from-emerald-600 to-blue-300 bg-clip-text text-transparent">
-              Get answers.
+            <div className=" font-semibold text-3xl md:text-6xl  bg-gradient-to-r text-neutral-100 bg-clip-text text-transparent">
+              Get answers
             </div>
+            <div className="text-3xl md:text-3xl font-bold text-neutral-100">
             <Accordion type="single" collapsible>
     <AccordionItem value="item-1">
-      <AccordionTrigger>What is Bird?</AccordionTrigger>
+      <AccordionTrigger>How long does it take to design and launch a website?</AccordionTrigger>
       <AccordionContent>
-        Bird is a full fledge marketing agency that specializes in branding, web design, and digital marketing.
+      Typically, our custom dental websites are designed and launched within 4-6 weeks, depending on the complexity of your requirements.
       </AccordionContent>
     </AccordionItem>
     <AccordionItem value="item-2">
-      <AccordionTrigger>How to start ?</AccordionTrigger>
+      <AccordionTrigger>Can I update my website content myself??</AccordionTrigger>
       <AccordionContent>
-        You can start by contacting us. We will get back to you within 24 hours.
+      Yes, all our websites come with a user-friendly content management system that allows you to easily update and manage your content.
       </AccordionContent>
     </AccordionItem>
     <AccordionItem value="item-3">
-      <AccordionTrigger>
-    Pricing ?
-      </AccordionTrigger>
+      <AccordionTrigger>Is my patient data secure?</AccordionTrigger>
       <AccordionContent>
-        We offer custom tailored solutions for your business. Contact us to get a quote.
-        
+      Absolutely. We use HIPAA-compliant data storage solutions to ensure that all patient information is secure and confidential.  
       </AccordionContent>
     </AccordionItem>
-  
     <AccordionItem value="item-4">
       <AccordionTrigger>
-    Support ?
+      Do you provide ongoing support?
         </AccordionTrigger>
       <AccordionContent>
-        We offer Monday-Friday support for all our clients.
+      Yes, we offer various support plans to ensure your website continues to run smoothly and remains up-to-date.
       </AccordionContent>
     </AccordionItem>
   </Accordion>
+  </div>
   
   
           </div>

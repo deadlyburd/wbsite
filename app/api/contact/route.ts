@@ -24,14 +24,14 @@ export async function POST(req: Request) {
         port: 465,
         secure: true,
         auth: {
-          user: "tasicigor123@gmail.com",
-          pass: "bsel kcxt drvb srcx",
+          user: "abiileshlive@gmail.com",
+          pass: "ugcz olvs nnqb mqwb",
         },
       });
 
       const mailOptions = {
         from: email,
-        to: "tasicigor123@gmail.com",
+        to: "abiileshlive@gmail.com",
         subject: "Contact Form Submission",
         html: `
                     <h1>Contact Form</h1>
@@ -50,12 +50,12 @@ export async function POST(req: Request) {
  
       await transporter.sendMail(mailOptions);
 
-      return NextResponse.json("email has been sent");
+      return NextResponse.json("Email has been sent");
     } catch (error) {
-      return NextResponse.json("email has not been sent");
+      return NextResponse.json("Email has not been sent");
     }
   } else {
-    return NextResponse.json('method not allowed');
+    return NextResponse.json('Method not allowed');
   }
 
 }

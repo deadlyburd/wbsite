@@ -12,58 +12,53 @@ const plans = [
   {
     index: 0,
     name: "Basic",
-    price: " US $499",
+    price: " EUR 39 + Base",
     features: [
-      "Fully responsive on all screens",
-
+      "Custom Website Design",
       "Design + Development",
-
-      "Private communication channel",
+      "Basic Appointment Booking System",
       "1-3 days turnaround time",
     ],
     style:
       " rounded-3xl  py-10 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
     description:
-      "Standalone components tailored to your needs and easily integrated. Perfect for website elements or sections.",
+      "Perfect for smaller practices or those just getting started.",
     button: "Buy Now",
   },
   {
     index: 1,
     name: "Premium",
-    price: "US $1299",
+    price: "EUR 69 + Base",
     features: [
-      "Fully responsive on all screens",
-      "React / Next.js / Tailwind CSS code",
-      "Design + Development",
+      "All features of the Basic Plan",
+      "Full eCommerce Integration for Dental Products",
+      "Comprehensive Analytics and Reporting",
       "24-hour support response time",
-      "Private communication channel",
-      "3-5 days turnaround time",
     ],
     style:
       " rounded-3xl  py-10 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
     description:
-      "Best for early-stage startups, businesses, and freelancers that need a marketing side to showcase their work and vision.",
+      "Ideal for growing practices that need more advanced features.",
     button: "Buy Now",
   },
   {
     index: 2,
-    name: "Enterprise",
+    name: "Professional",
     feature: "Contact Us",
     price: "Let's Talk!",
     features: [
-      "Fully responsive on all screens",
-      "React / Next.js / Tailwind CSS code",
-      "Design + Development",
-      "Unlimited Revisions",
-      "24-hour support response time",
-      "Private communication channel",
-      "Priority Development Queue",
-      "Dedicated Project Manager",
+      "All Professional Plan Features",
+      "Custom E-commerce Solutions",
+      "Full-featured Appointment Booking System",
+      "Comprehensive Patient Data Management",
+      "Blokchain Integration",
+      "Advanced Backend Dashboard",
+      "View Updates with our App ",
     ],
     style:
       " h-full rounded-3xl py-10 flex flex-col  bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50  ",
     description:
-      "Best for small businesses and startups that need a performant website that looks great and converts visitors to customers.",
+      "Best for larger practices that require comprehensive solutions.",
     button: "Contact Us",
   },
 ];
@@ -77,7 +72,6 @@ const Pricing = () => {
 <Navbar
              scrollToWebsiteDesign={() => {}}
              scrollToGraphicDesign={() => {}}
-             scrollToShopifyStores={() => {}}
              scrollToBrands={() => {}}
               scrollToServices={() => {}}
       />
@@ -96,11 +90,7 @@ const Pricing = () => {
                   <div className="text-4xl flex  items-center font-medium">
                     {plan.name}
                     {/* render feature tag only for enterprise tab*/}
-                    {plan.feature === "Contact Us" && (
-                      <div className="text-sm font-medium text-blue-600 bg-blue-100 px-2 py-1 rounded-full ml-4 items-center ">
-                        Contact Us
-                      </div>
-                    )}
+                    {plan.feature === "Contact Us" }
                   </div>
                   <div className="text-3xl pt-6 ">{plan.price}</div>
                   <div className="py-6">{plan.description}</div>
@@ -113,9 +103,9 @@ const Pricing = () => {
                       >
                         {/* render checkmark only for enterprise tab*/}
                         {plan.feature === "Contact Us" ? (
-                          <PiCheckCircleFill className="text-blue-400 mr-2 text-xl" />
+                          <PiCheckCircleFill className="text-green-700 mr-2 text-xl" />
                         ) : (
-                          <PiCheckCircleFill className="text-green-600 mr-2 text-xl" />
+                          <PiCheckCircleFill className="text-green-700 mr-2 text-xl" />
                         )}
 
                         {feature}
@@ -127,8 +117,8 @@ const Pricing = () => {
                 <div className={plan.button}>
                   {index === 0 && (
                     <Link
-                      href="https://buy.stripe.com/6oEg1WdsibFr1EYbIK"
-                      className="rounded-3xl my-4  py-2 text-white w-full mx-auto items-center flex justify-center bg-gradient-to-r from-emerald-500 to-blue-300"
+                      href="https://buy.stripe.com/aEUg0Jdktf8vbyUfYY"
+                      className="rounded-3xl my-4  py-2 text-white w-full mx-auto items-center flex justify-center bg-gradient-to-r"
                     >
                       Buy Now
                     </Link>
@@ -136,8 +126,8 @@ const Pricing = () => {
                     {index === 1 && (
                       <Link
                         
-                        href="https://buy.stripe.com/14k2b65ZQ8tf5Ve28c"  
-                        className="rounded-3xl my-4  py-2 text-white w-full mx-auto items-center flex justify-center bg-gradient-to-r from-emerald-500 to-blue-300" 
+                        href="https://buy.stripe.com/aEU01L94d6BZ8mI9AB"  
+                        className="rounded-3xl my-4  py-2 text-white w-full mx-auto items-center flex justify-center bg-gradient-to-r" 
                       >
                         Buy Now
                         </Link>
@@ -146,7 +136,7 @@ const Pricing = () => {
 
                           <Link
                           href="/contact"
-                          className="rounded-3xl my-4  py-2 text-white w-full mx-auto items-center flex justify-center bg-gradient-to-r from-purple-500 to-blue-300"
+                          className="rounded-3xl my-4  py-2 text-white w-full mx-auto items-center flex justify-center bg-gradient-to-r "
                         >
                           Contact Us
                         </Link>

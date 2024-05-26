@@ -9,7 +9,6 @@ import Link from "next/link";
 
 import WebsiteDesign from "./website-design";
 import GraphicDesign from "./graphic-design";
-import ShopifyStores from "./shopify-stores";
 import Brands from "./brands";
 import Services from "./services";
 import FAQS from "./faq";
@@ -42,9 +41,6 @@ export default function Home() {
     graphicDesignRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
-  const scrollToShopifyStores = () => {
-    shopifyStoresRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
 
   const scrollToBrands = () => {
     brandsRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -60,18 +56,18 @@ export default function Home() {
       <Navbar
         scrollToWebsiteDesign={scrollToWebsiteDesign}
         scrollToGraphicDesign={scrollToGraphicDesign}
-        scrollToShopifyStores={scrollToShopifyStores}
         scrollToBrands={scrollToBrands}
         scrollToServices={scrollToServices}
       />
 
-      <Spotlight className="hidden md:flex md:-top-80 left-80  " fill="white" />
+      <Spotlight className="hidden md:flex md:-top-40 left-80  " fill="neutral-50" />
       <div className="p-4 mx-auto relative z-10 w-full pt-10 md:pt-20 px-2">
-        <div className="text-4xl pb-5 md:text-7xl px-6 text-center  bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to bg-neutral-400 bg-opacity-50">
-          Create, grow, and <br /> scale your business
+        <div className="text-7xl pb-5 md:text-7xl px-6 text-left justify-left bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to bg-neutral-100 bg-opacity-70">
+        PREMIUM WEBSITES FOR <br className="text-red underline-offset-1"/> DENTISTS AND DENTAL PRACTIONERS
         </div>
-        <p className="mt-4 text-lg font-normal  text-neutral-300 max-w-lg text-center mx-auto px-4">
-          Custom tailored solutions for your business. We are a team of creatives who are excited to help you grow your business.
+        <p className="mt-4 text-2xl font-normal  text-neutral-300 max-w-lg text-left mx-auto px-4">
+        Your practice deserves the best online presence. At Premier Dental Websites, we specialize in designing premium, custom websites tailored specifically for dentists. 
+        Elevate your practice with a professional, user-friendly website that sets you apart from the competition.
         </p>
 
         <Link
@@ -90,14 +86,11 @@ export default function Home() {
         <div ref={graphicDesignRef}>
           <GraphicDesign />
         </div>
-        <div ref={shopifyStoresRef}>
-          <ShopifyStores />
+        <div id ='services'>
+        <Services />
         </div>
         <div ref={brandsRef}>
           <Brands />
-        </div>
-        <div id ='services'>
-        <Services />
         </div>
         <InfiniteMovingCardsDemo />
         <FAQS />
