@@ -125,7 +125,7 @@ export default function ContactForm() {
           <div className=" text-white md:w-4/5 space-y-6 p-4 rounded-2xl my-4 hidden md:flex md:flex-col">
             <div className="flex gap-4">
               <div className=" font-normal pb-4 text-2xl ">
-              "The eCommerce platform is a game-changer for our practice. We can now sell products directly to our patients" - Dr. Jones
+              &quot;The eCommerce platform is a game-changer for our practice. We can now sell products directly to our patients&quot; - Dr. Jones
               </div>
             </div>
 
